@@ -21,7 +21,7 @@ def api_function():
     for names in list_names:
         param = {
             'name': names,
-            'user_key': '2c598584904a89f2ed1a056c842fad98'
+            'user_key': API_KEY
         }
         a = requests.get(url, params= param)
         b = a.json()
