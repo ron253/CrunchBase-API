@@ -11,7 +11,7 @@ person_name = [ ]
 url = 'https://api.crunchbase.com/v3.1/odm-people?'
 
 def read_csv(urls):
-    with open('/Users/matthuang/Documents/crunchbase_data.csv') as file:
+    with open('file path') as file:
         read_file = csv.reader(file)
         for row in read_file:
             if (row[0] != 'people-11-22-2019') and (row[0] !='Full name'):
@@ -23,10 +23,10 @@ def api_function():
             'name': names,
             'user_key': API_KEY
         }
-        a = requests.get(url, params= param)
-        b = a.json()
+        get_request = requests.get(url, params= param)
+        get_data = get_request.json()
 
-        for items in b['data']['items']:
+        for items in get_data['data']['items']:
             first_name = items['properties']['first_name']
             last_name = items['properties']['last_name']
             full_name = first_name + ' ' + last_name
