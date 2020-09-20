@@ -1,7 +1,7 @@
 # CrunchBase
 
 **Purpose** <br/>
-Learned about Rest API's and applied my knowledge to make GET requests with Python from Crunchbase API to enchance SCU consitutents' database with contact information. <br/>
+Learned about Rest API's and applied my knowledge to make GET requests with Python from Crunchbase API to enchance SCU consitutents' database with updated information. <br/>
 
 
 
